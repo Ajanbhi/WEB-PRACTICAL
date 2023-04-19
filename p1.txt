@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+</head>
+
+
+<body id="bo">
+    <p id="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nisi vero delectus pariatur sunt dolorum
+        ipsa, eius molestias ducimus ullam soluta aut, ipsum et expedita voluptates consectetur quam exercitationem.
+        Quibusdam!
+        <button onclick="change()">click</button>
+
+    </p>
+
+    <script>
+        // var a=parseFloat(prompt("enter a num"));
+        // var b=parseFloat(prompt("enter a num"));
+        // var c= a+b;
+        // document.getElementById("d1").innerHTML= "the sum is"+c;
+
+
+        // function dtime() {
+        //     time = new Date();
+        //     document.getElementById('d1').innerHTML = time;
+        // }
+        // setInterval(dtime, 1000);
+
+        function change(){
+            let bo=document.getElementById('d1');
+            // let random=rc();
+            // bo.style.backgroundColor=random;
+            bo.style.fontSize=50;
+
+
+        }
+        function rc()
+        {
+            let letter="0123456789ABCDEF"
+            let color="#";
+            for(let i=0;i<6;i++)
+            {
+                color+=letter[Math.floor(Math.random()*16)];
+            }
+            return color;
+        }
+
+
+        let a=1;
+        let b=100;
+        let c=a+(b-a)*Math.random();
+        console.log("the random number is: ",c);
+    </script>
+</body>
+
+</html>
